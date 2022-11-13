@@ -23,16 +23,12 @@ console.log(tonga)
 console.log(tongb)
 
 // Bài Tập 3
-function check(string){
-    if (string.length >= 3 && !string.include){
-    console.log(`${string}ing`);
-    }
-    else if (string.include('ing')){
-        console.log(`${string}ly`);
-    }
-    else if (string.length < 3){
-        console.log(string);
-    }
-}
-check('thanhdat');
-
+let them = 'thanhdat';
+if(them.length >= 3 && them.endsWith('ing')){
+    them = them + 'ly';
+}else if(them.length <3){
+    them = them;
+}else{
+    them += "ing";
+}  
+console.log(them)
